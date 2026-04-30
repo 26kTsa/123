@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Helvetica Neue", Helvetica, Arial, "Microsoft JhengHei", sans-serif;
+  --font-mono: "Courier New", Courier, monospace;
+  
+  --color-dashboard-bg: #E4E3E0;
+  --color-dashboard-ink: #141414;
+  --color-dashboard-accent: #F27D26;
+  --color-dashboard-sidebar: #D9D8D4;
+  --color-dashboard-line: #141414;
+}
+
+@layer base {
+  body {
+    @apply bg-dashboard-bg text-dashboard-ink font-sans antialiased;
+  }
+  
+  h1, h2, h3 {
+    @apply font-sans font-bold tracking-tight;
+  }
+}
+
+.technical-border {
+  @apply border-8 border-dashboard-ink;
+}
+
+.section-header-mono {
+  @apply font-mono uppercase text-[12px] tracking-[2px] text-dashboard-accent mb-3 block;
+}
+
+.dashboard-card {
+  @apply bg-white/40 border border-dashboard-line p-4 transition-all duration-200;
+}
+
+.dashboard-card:hover {
+  @apply bg-white shadow-[4px_4px_0px_#141414];
+}
+
+
