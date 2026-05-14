@@ -55,10 +55,10 @@ export default function Chatbot() {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           onClick={() => setIsOpen(true)}
-          className="fixed bottom-6 right-6 bg-notion-blue text-white px-5 py-3 rounded-full shadow-lg z-50 flex items-center gap-3 border border-white/20 hover:bg-blue-600 transition-all font-medium"
+          className="fixed bottom-24 right-6 bg-notion-text text-white px-4 py-2 rounded-full shadow-lg z-50 flex items-center gap-2 border border-white/20 hover:bg-black transition-all font-medium"
         >
-          <div className="w-2 h-2 bg-white rounded-full animate-pulse shadow-[0_0_8px_white]" />
-          <span className="text-[14px] tracking-tight">詢問 AI 助手</span>
+          <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse shadow-[0_0_8px_rgba(34,197,94,0.4)]" />
+          <span className="text-[12px] tracking-tight">AI 助手</span>
         </motion.button>
       )}
 
@@ -69,7 +69,7 @@ export default function Chatbot() {
             initial={{ opacity: 0, y: 20, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.95 }}
-            className="fixed bottom-6 right-6 w-[350px] h-[500px] bg-white text-notion-text rounded-2xl shadow-2xl flex flex-col overflow-hidden z-50 border border-notion-border"
+            className="fixed bottom-24 right-6 w-[350px] h-[500px] bg-white text-notion-text rounded-2xl shadow-2xl flex flex-col overflow-hidden z-50 border border-notion-border"
           >
             {/* Header */}
             <div className="p-4 border-b border-notion-border flex items-center justify-between bg-notion-sidebar/50">
